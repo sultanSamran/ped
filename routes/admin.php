@@ -21,14 +21,14 @@ use Illuminate\Support\Facades\Route;
    
 // });
 
-// Route::group(['namespace' => 'Admin', 'middleware' => 'auth:admin' ] , function(){
-//     Route::get('/' , 'DashboardController@index') ->name('admin.dashboard');
+Route::group(['namespace' => 'Admin', 'middleware' => 'auth:admin' ] , function(){
+    Route::get('/' , 'DashboardController@index') ->name('admin.dashboard');
    
    
-// });
+});
 
-Route::group(['namespace' => 'Admin'] , function(){
+Route::group(['namespace' => 'Admin' ,'middleware' => 'guest:admin'] , function(){
     Route::get('login' , 'LoginController@getLogin') ->name('admin.login');
     Route::post('login' , 'LoginController@postlogin') ->name('admin.post.login');
-    Route::get('/' , 'DashboardController@index') ->name('admin.dashboard');
+    
 });

@@ -1,3 +1,5 @@
-asdsdas
+@extends('layouts.admin')
 
-asdsad
+@section('content')
+    asdsadsa
+@endsection
