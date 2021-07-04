@@ -23,13 +23,14 @@
             </li> --}}
 
 
-            <li class="nav-item"><a href=""><i class="la la-group"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">الاقسام الرئيسيه </span>
-                    <span
+            <li class="nav-item">
+                   <a href=""><i class="la la-group"></i>
+                            <span class="menu-title" data-i18n="nav.dash.main">الاقسام الرئيسيه </span>
+                            {{-- <span --}}
                         {{-- class="badge badge badge-danger badge-pill float-right mr-2">{{App\Models\MainCategory::defaultCategory() ->count()}}</span> --}}
                 </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href=""
+                    <li><a class="menu-item" href=""
                                           data-i18n="nav.dash.ecommerce"> عرض الكل </a>
                     </li>
                     <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
@@ -40,52 +41,47 @@
 
             <li class="nav-item"><a href=""><i class="la la-group"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">الاقسام الفرعية   </span>
-                    <span
-                        class="badge badge badge-danger badge-pill float-right mr-2">400</span>
+                    {{-- <span
+                        class="badge badge badge-danger badge-pill float-right mr-2">400</span> --}}
                 </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href=""
+                    {{-- <li><a class="menu-item" href=""
                                           data-i18n="nav.dash.ecommerce"> عرض الكل </a>
-                    </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            قسم فرعي جديد </a>
+                    </li> --}}
+                    <li>
+                           {{-- <a class="menu-item" href="">إضافة دفعة</a> --}}
                     </li>
                 </ul>
             </li>
 
-            <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">المتاجر  </span>
-                    <span
-                        {{-- class="badge badge badge-success badge-pill float-right mr-2">{{App\Models\Vendor::count()}}</span> --}}
-                </a>
-                <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href="}}"
-                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
-                    </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            متجر  </a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">الطلاب  </span>
-                    <span
-                        class="badge badge badge-warning  badge-pill float-right mr-2"></span>
-                </a>
-                <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
-                    </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            طالب </a>
-                    </li>
-                </ul>
-            </li>
+            
 
 
             <li class="nav-item">
+                     <a href=""><i class="la la-male"></i>
+                            <span class="menu-title" data-i18n="nav.dash.main">إعدادات النظام  </span>
+                     </a>
+
+                     <ul class="menu-content">
+                            <li>
+                                   <a class="menu-item" href="{{ route('admin.student') }}">الطلاب</a>
+                            </li>
+                            <li>
+                                   <a class="menu-item" href="">الدفعات</a>
+                            </li>
+                            <li>
+                                   <a class="menu-item" href="">المراحل</a>
+                            </li>
+                            <li>
+                                   <a class="menu-item" href="">المواد الدراسية</a>
+                            </li>
+
+                    
+                </ul>
+            </li>
+
+
+            {{-- <li class="nav-item">
                 <a href=""><i class="la la-male"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">تذاكر المراسلات   </span>
                     <span
@@ -748,9 +744,9 @@
                     <li><a class="menu-item" href="error-500-with-navbar.html"
                            data-i18n="nav.error_pages.error_500_with_navbar">Error 500 with Navbar</a>
                     </li>
-                </ul>
-            </li>
-            <li class=" nav-item"><a href="#"><i class="la la-file-text"></i><span class="menu-title"
+                </ul> --}}
+            {{-- </li> --}}
+            {{-- <li class=" nav-item"><a href="#"><i class="la la-file-text"></i><span class="menu-title"
                                                                                    data-i18n="nav.other_pages.main">Others</span></a>
                 <ul class="menu-content">
                     <li><a class="menu-item" href="#" data-i18n="nav.other_pages.coming_soon.main">Coming Soon</a>
@@ -770,14 +766,14 @@
                            data-i18n="nav.other_pages.under_maintenance">Maintenance</a>
                     </li>
                 </ul>
-            </li>
-            <li class=" navigation-header">
+            </li> --}}
+            {{-- <li class=" navigation-header">
                 <span data-i18n="nav.category.ui">User Interface</span><i class="la la-ellipsis-h ft-minus"
                                                                           data-toggle="tooltip"
                                                                           data-placement="right"
                                                                           data-original-title="User Interface"></i>
-            </li>
-            <li class=" nav-item"><a href="#"><i class="la la-tablet"></i><span class="menu-title"
+            </li> --}}
+            {{-- <li class=" nav-item"><a href="#"><i class="la la-tablet"></i><span class="menu-title"
                                                                                 data-i18n="nav.cards.main">Cards</span><span
                         class="badge badge badge-success float-right mr-2">New</span></a>
                 <ul class="menu-content">
@@ -794,8 +790,8 @@
                            data-i18n="nav.cards.card_draggable">Draggable</a>
                     </li>
                 </ul>
-            </li>
-            <li class=" nav-item"><a href="#"><i class="la la-fire"></i><span class="menu-title"
+            </li> --}}
+            {{-- <li class=" nav-item"><a href="#"><i class="la la-fire"></i><span class="menu-title"
                                                                               data-i18n="nav.advance_cards.main">Advance Cards</span></a>
                 <ul class="menu-content">
                     <li><a class="menu-item" href="card-statistics.html" data-i18n="nav.cards.card_statistics">Statistics</a>
@@ -1553,7 +1549,7 @@
                         class="la la-text-height"></i>
                     <span class="menu-title" data-i18n="nav.support_documentation.main">Documentation</span>
                 </a>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </div>

@@ -11,4 +11,10 @@ class DashboardController extends Controller
     {
         return view('admin.index');
     }
+
+
+    public function index1()
+    {
+        return view('admin.student');;
+    }
 }

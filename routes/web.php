@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function(){
+    return view('layouts.admin');
+});
+
+Route::get('student/grades' , 'TestController@getStudentGrades');
 
 Route::get('/testlayouts', function(){
     return view('layouts.admin');
