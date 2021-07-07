@@ -9,8 +9,13 @@ class Student extends Model
 {
     protected $fillable = [];
 
-    public function exams()
+    // public function exams()
+    // {
+    //     return $this->belongsToMany('App\Models\Exam' , 'Exam_grades');
+    // }
+
+    public function exam()
     {
-        return $this->belongsToMany('App\Models\Exam' , 'Exam_grades');
+        return $this->belongsToMany('App\Models\Exam');
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Exam_grades;
 use Illuminate\Database\Eloquent\Model;
 
 class Exam extends Model
@@ -9,9 +10,9 @@ class Exam extends Model
     protected $fillable = [];
     protected $hidden = [];
 
-    public function students()
-    {
-        return $this->belongsToMany('App\Models\Student' , 'Exam_grades');
-    }
+    // public function student()
+    // {
+    //     return $this->belongToMany('App\Models\Student');
+    // }
 
 }
